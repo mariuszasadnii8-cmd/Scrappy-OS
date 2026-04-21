@@ -1,0 +1,43 @@
+```
+# Rust/Cargo
+target/
+Cargo.lock
+
+# WASM binaries
+scrapboot/wasm_bins/*.wasm
+
+# Dependencies
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+
+# Build artifacts
+**/build/
+**/dist/
+**/target/
+**/.gradle/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# OS
+.DS_Store
+Thumbs.db
+```
