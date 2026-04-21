@@ -1,0 +1,22 @@
+[package]
+name        = "scrappy-wasm"
+version     = "0.1.0"
+edition     = "2021"
+authors     = ["ScrappyOS Team"]
+description = "Minimal no_std WASM interpreter for Scrappy OS with WASI→Email bridge"
+
+[lib]
+name = "scrappy_wasm"
+
+[dependencies]
+# no_std math for f32/f64 ops
+libm = { version = "0.2", default-features = false }
+
+[features]
+default = []
+
+[profile.release]
+opt-level = "z"   # size-optimised for kernel use
+panic     = "abort"
+
+# To build: cargo build --release --target <your-bare-metal-target>
