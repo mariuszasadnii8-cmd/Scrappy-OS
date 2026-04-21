@@ -1,4 +1,29 @@
 ```
-# WebAssembly files
-*.wasm
+# Rust/Cargo specific
+target/
+Cargo.lock
+*.rs.bk
+*.swp
+*.tmp
+
+# Dependencies
+vendor/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
 ```

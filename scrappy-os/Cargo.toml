@@ -1,0 +1,15 @@
+[package]
+name = "scrappy-os"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["rlib"]
+
+[features]
+default = []
+std = []
+
+[dependencies]
+
+[dev-dependencies]
